@@ -1,0 +1,109 @@
+a {
+	text-decoration: none;
+}
+
+/* Mise en page du texte */
+.blue_text {
+	color: #0645ad;
+}
+.italics {
+	font-style: italic;
+}
+.bold {
+	font-weight: bold;
+}
+.body_article {
+	font-family: Arial, Helvetica, sans-serif;
+}
+/*  mise en page des titres des cases */
+.blue_bar {
+	background: #bdd8fb;
+	color: #bdd8fb;
+	height: 5px;
+	border: none;
+	margin: 0;
+}
+.title_text {
+	border-bottom: 5px solid #bdd8fb;
+	margin: 0;
+	font-family: FreeSerif, Arial, sans-serif;
+}
+.title_text::first-letter {
+	font-size: x-large;
+}
+
+/* Mise en page des 2 cases */
+.container {
+	display: flex;
+	flex-direction: column;
+	line-height: 1.5;
+}
+.article {
+	box-shadow: 0 0 5px #999;
+	padding: 20px;
+	min-height: 500px;
+	width: 50%;
+	margin: 10px;
+	align-self: center;
+}
+
+/* Image dans l'article */
+
+.article_image {
+	display: flex;
+	flex-direction: row;
+}
+.image_key {
+	display: flex;
+	align-items: center;
+}
+.image_lady {
+	display: flex;
+	align-items: flex-start;
+	margin-top: 10px;
+}
+
+/* Etoile grise */
+
+.read_more {
+	margin-left: 10px;
+}
+
+/* liens en bas de l'article */
+
+.links {
+	display: flex;
+	justify-content: flex-end;
+	margin: 20px 0;
+}
+
+.links > ul {
+	display: flex;
+}
+
+.links > ul > li {
+	margin: 0 3px;
+	list-style-type: none;
+}
+
+.responsive_dot {
+	display: none;
+}
+/* Supprimer les marges ajoutés par les UL dans 2 paragraphes entre la photo */
+.paragraph1 {
+	margin-bottom: 0;
+}
+
+.paragraph2 {
+	margin-top: 0;
+}
+
+@media screen and (max-width: 1200px) {
+	.links > ul {
+		flex-flow: column wrap;
+		margin: auto;
+	}
+	.responsive_dot {
+		display: inline;
+	}
+}
